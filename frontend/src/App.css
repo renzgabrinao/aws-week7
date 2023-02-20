@@ -1,6 +1,70 @@
 #root {
-  max-width: 1280px;
+  min-width: 80%;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+}
+
+.App form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+}
+
+.App form input {
+  height: 40px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.App form button {
+  background-color: darkgreen;
+  width: 60%;
+  margin: auto;
+}
+
+.movies {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-evenly; */
+  /* gap: 1%; */
+}
+
+.movie-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 33.333%;
+  /* height: 300px; */
+}
+
+.item-button {
+  border: 1px solid grey;
+  margin: 5px 0;
+  width: 100px;
+}
+
+.movie-item form {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0 0 0;
+  height: 100px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.movie-item form input {
+  height: 25px;
+  width: 80%;
+  text-align: center;
+}
+
+.movie-item form button {
+  margin-top: 5px;
+  background-color: darkgreen;
+  width: 50%;
 }
